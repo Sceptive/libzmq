@@ -8,6 +8,7 @@
 #include "ip.hpp"
 
 #ifndef ZMQ_HAVE_WINDOWS
+#include <sys/socket.h>
 #include <sys/types.h>
 #include <arpa/inet.h>
 #include <netinet/tcp.h>
