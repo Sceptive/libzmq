@@ -16,6 +16,20 @@ protocols and more.
 
 ## Building and installation
 
+### OpenBSD 6.3 (Build From Source)
+
+```
+#In case you don't have autoconf, automake and libtool
+pkg_add autoconf-2.68p1 automake-1.15.1 libtool-2.4.2p0
+export AUTOCONF_VERSION=2.68
+export AUTOMAKE_VERSION=1.15
+./autogen.sh
+./configure CC=clang CXX=clang++
+gmake -j 4
+gmake install
+```
+
+
 ### Linux
 
 For Linux users, pre-built binary packages are available for most distributions.
